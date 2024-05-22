@@ -1,0 +1,110 @@
+1)
+Paper Title: Deep RTS: A Game Environment for Deep Reinforcement Learning in Real-Time Strategy Games
+Authors: Arne Andersen, Morten Goodwin, Ole-Christoffer Granmo 
+
+Concept
+
+Deep RTS introduces a high-performance game environment for testing advanced artificial intelligence algorithms in Real-Time Strategy (RTS) games.
+It supports accelerated learning, allowing for learning 50,000 times faster than existing RTS games.
+The environment is flexible, enabling research in various RTS scenarios, including partially observable state-spaces and map complexity.
+
+drawbacks
+
+Current state-of-the-art algorithms in RTS games are unstable and struggle to converge towards optimal policies in environments with multi-reward objectives.
+
+Advantages
+
+Deep RTS fills the gap between simplistic game simulators like microRTS and complex ones like StarCraft II, providing a suitable environment for testing novel reinforcement learning techniques in RTS games.
+Experimental results show that Deep RTS can train deep reinforcement learning algorithms effectively, with the Deep Q-Network agent outperforming random-play agents over 70% of the time, showcasing its potential for AI research in RTS games.
+
+
+
+2)
+Title and Authors
+
+The research paper is titled "High-level Reinforcement Learning in Strategy Games" by Christopher Amato and Guy Shani 
+
+Concept
+
+The paper explores using reinforcement learning in strategy games, focusing on Civilization IV. It employs a single-agent approach to learn a best response strategy against a fixed player, adapting policies based on game conditions and opponent strategies 
+
+Drawbacks
+
+The parameters for learning were chosen based on educated guesses rather than extensive analysis, indicating potential for improvement 
+The factored model version of Dyna-Q stops improving after a certain point, suggesting room for further optimization 
+
+Advantages
+
+Reinforcement learning quickly learns high-quality policies, outperforming random policies and hand-tuned AI strategies in the game 
+The approach can adapt to fixed opponents, rapidly improving deficiencies in hard-coded strategies, showcasing the power of reinforcement learning in complex scenarios like strategy games
+
+
+3)
+Topic and Authors
+
+The research paper is titled "Real Time Strategy Games: A Reinforcement Learning Approach."
+The authors of the paper are Harshit Sethy, Amit Patel, and Vineet Padmanabhan
+
+Concept
+
+The paper proposes reinforcement learning algorithms, specifically Q-learning and SARSA, with a generalized reward function for training a reinforcement learning agent in Real Time Strategy (RTS) games like BattleCity
+The approach eliminates the need for a hard-coded simulator, allowing the system to learn from interactions with opponents and adapt strategies without human traces
+
+Drawbacks
+Case-based learning approaches require expert demonstrations for planning, lack further learning post-training, demand a large number of rules for large state spaces, and lack exploration for optimal solutions
+
+Advantages
+
+The proposed approach in the paper allows learning from interactions with opponents without human traces, enabling quick strategy adaptation based on opponents' actions
+By using reinforcement learning algorithms with a generalized reward function, the system can adapt to various opponents in RTS games without the need for a game-specific simulator
+
+
+
+4)
+Topic: Terrain Analysis in StarCraft 1 and 2 as Combinatorial Optimization
+
+Authors:
+The research paper was authored by Florian Richoux.
+Concept:
+
+The paper introduces a novel approach to terrain analysis in StarCraft games by treating it as a combinatorial optimization problem.
+It presents a library named TAUNT that can handle terrain analysis in both StarCraft 1 and StarCraft 2 maps, offering various spatial representation options by adjusting constraints and objective functions
+.
+Drawbacks:
+
+Limited discussion on the specific challenges faced during the implementation of the proposed method.
+The paper does not delve into the potential limitations of the TAUNT library in handling extremely complex or dynamically changing maps.
+Advantages:
+
+Offers a flexible method for terrain analysis in StarCraft games, allowing for different types of analyses by modifying the problem model.
+Provides a universal tool for StarCraft bots with diverse spatial representation needs, potentially enabling the development of adaptive AIs for StarCraft.
+The library allows for the dynamic reanalysis of terrain, such as after the destruction of obstacles, enhancing adaptability in gameplay strategies
+
+
+
+
+
+5)
+Topic, Authors, Concept, Drawbacks, and Advantages of the Paper
+
+Topic
+
+The research paper focuses on "Reinforcement Learning for Real-Time Strategy games," exploring machine learning methods developed for RTS games, particularly Reinforcement Learning techniques
+
+Authors
+
+The paper is authored by Maximilien Germain and Othmane Marfoq.
+Concept
+
+The paper reviews the challenges in designing human-level bots for RTS games, using StarCraft as a test environment. It discusses state-of-the-art methods in StarCraft, including adaptation to opponent strategy and micromanagement tasks
+
+Drawbacks
+
+Difficulty in accurately predicting opponent strategies in real-time.
+Lack of methods to adapt current strategies to counter opponents after prediction.
+Sparse and delayed reward functions in StarCraft, requiring more exploration
+
+Advantages
+
+Introduction of innovative methods like informed e-greedy sampling and Combinatorial Multi-armed Bandits for RTS tasks
+Successful solutions for micromanagement tasks in StarCraft using reinforcement learning, surpassing hard-coded strategies
